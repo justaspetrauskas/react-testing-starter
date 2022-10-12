@@ -85,6 +85,7 @@ if (process.env.REACT_APP_OKTA) {
 }
 
 /* istanbul ignore if */
+// @ts-no
 if (process.env.REACT_APP_AWS_COGNITO) {
   app.use(checkCognitoJwt);
 }
